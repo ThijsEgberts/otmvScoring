@@ -3,12 +3,13 @@ package com.thijsEgberts.otmvscoring.data.model.user;
 /**
  * Data class to represent a basic user.
  */
-public class User {
+public abstract class User {
 
-    private String UID;
-    private String displayName;
-    private String fistName;
-    private String lastName;
+    protected String UID;
+    protected String displayName;
+    protected String fistName;
+    protected String lastName;
+    protected UserRoles userRole;
 
 
     public User(String UID, String displayName, String fistName, String lastName) {

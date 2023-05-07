@@ -15,7 +15,7 @@ public class JuryFormModel {
     private JuryUser jury;
     private int nrOfFields;
     private List<Integer> fieldNrs;
-    
+
     //A list of scores for each contestant
     //The list is a mapping of fieldNr -> (scoringCriteria -> score)
     private Map<Integer, Map<ScoringCriteriaModel, Integer>> scores;
