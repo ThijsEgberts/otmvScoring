@@ -14,17 +14,13 @@ public class DatabaseHandler {
     public static final String DATABASE_URL = "https://console.firebase.google.com/project/otmv-72337/database/otmv-72337-default-rtdb/data/~2F";
     public static final String USERS = "users";
 
-    //private constants
-    private static final FirebaseDatabase DATABASE_INSTANCE = FirebaseDatabase.getInstance(DATABASE_URL);
-    private static final DatabaseReference USERS_REF = getInstance().getReference(USERS);
-
     /**
      * This method returns an instance of the firebase database.
      *
      * @return database instance variable
      */
     public static FirebaseDatabase getInstance() {
-        return DATABASE_INSTANCE;
+        return FirebaseDatabase.getInstance(DATABASE_URL);
     }
 
     /**
@@ -33,7 +29,7 @@ public class DatabaseHandler {
      * @return database reference for the users entry
      */
     public static DatabaseReference getUsersRef() {
-        return USERS_REF;
+        return getInstance().getReference(USERS);
     }
 
     public static FirebaseUser getCurrentAuthUser() {

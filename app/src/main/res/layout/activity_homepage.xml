@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomepageActivity">
 
+    <Button
+        android:id="@+id/addCategoriesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add categories"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="146dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
