@@ -70,4 +70,24 @@ public class JuryFormModel {
             scores.put(fieldNr, new HashMap<ScoringCriteriaModel, Integer>());
         }
     }
+
+    public CategoryModel getCategory() {
+        return category;
+    }
+
+    public JuryUser getJury() {
+        return jury;
+    }
+
+    public int getNrOfFields() {
+        return nrOfFields;
+    }
+
+    public List<Integer> getFieldNrs() {
+        return fieldNrs;
+    }
+
+    public Map<Integer, Map<ScoringCriteriaModel, Integer>> getScores() {
+        return scores;
+    }
 }
