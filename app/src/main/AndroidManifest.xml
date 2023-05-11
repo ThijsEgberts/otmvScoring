@@ -11,18 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OtmvScoring"
         tools:targetApi="31">
+
         <activity
-            android:name=".ScoringSheetActivity"
+            android:name=".ui.scoring.ScoringSheetActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ui.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".HomepageActivity"
-            android:exported="false" />
+            android:name=".ui.home.HomepageActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

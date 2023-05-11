@@ -6,5 +6,10 @@ import java.util.List;
 
 public interface CategoriesDBInterface {
 
-    public abstract List<CategoryModel> fetchCategoriesCallBack(List<CategoryModel> categoryModelsList);
+    /**
+     * Callback method for fetching all categories from the database.
+     *
+     * @param categoryModelsList the list of categories that got fetched
+     */
+    void fetchCategoriesCallBack(List<CategoryModel> categoryModelsList);
 }

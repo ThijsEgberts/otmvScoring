@@ -11,7 +11,8 @@ import com.google.firebase.database.FirebaseDatabase;
 public class DatabaseHandler {
 
     //public constants
-    public static final String DATABASE_URL = "https://console.firebase.google.com/project/otmv-72337/database/otmv-72337-default-rtdb/data/~2F";
+    public static final String DATABASE_URL = "https://otmv-72337-default-rtdb.europe-west1.firebasedatabase.app/";
+
     public static final String USERS = "users";
 
     /**
